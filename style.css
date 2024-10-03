@@ -1,0 +1,272 @@
+/* styles.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #000; /* Black Background for Cyberpunk Style */
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Container Styling */
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Card Styling */
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 15px;
+    border: 2px solid #0ff;
+    box-shadow: 0 0 20px #00ffea, 0 0 40px #00ffea, 0 0 80px #00ffea;
+    text-align: center;
+    transition: all 0.3s ease;
+    display: block;
+    
+}
+
+.cardInput  {
+    text-align: center;
+}
+
+.card:hover {
+    box-shadow: 0 0 30px #0ff, 0 0 60px #0ff, 0 0 120px #0ff;
+}
+
+/* Title Styling */
+.neon-title {
+    color: #0ff;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #00ffea, 0 0 20px #00ffea, 0 0 40px #00ffea;
+}
+
+/* Neon Marquee Styling */
+.neon-text {
+    font-size: 1em;
+    color: #0ff;
+    text-shadow: 0 0 10px #00ffea, 0 0 20px #00ffea, 0 0 40px #00ffea;
+}
+
+/* Input Field Styling */
+input[type="text"] {
+    width: 300px;
+    padding: 15px;
+    margin: 20px 0;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 255, 255, 0.6);
+    color: #0ff;
+    font-size: 16px;
+    backdrop-filter: blur(10px); /* Blur effect */
+    transition: all 0.3s ease;
+}
+
+input[type="text"]::placeholder {
+    color: #aaa;
+}
+
+input[type="text"]:focus {
+    box-shadow: 0 4px 20px #0ff, 0 4px 30px #0ff;
+    outline: none;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+/* Button Styling */
+.btn {
+    background: #0ff;
+    color: #000;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px #0ff, 0 0 30px #0ff, 0 0 60px #0ff;
+}
+
+.btn:hover {
+    background: #00e6d4;
+    box-shadow: 0 0 20px #0ff, 0 0 40px #0ff, 0 0 80px #0ff;
+}
+
+/* Animated Background Particles */
+.particles {
+    position: absolute;
+    width: 2000px;
+    height: 2000px;
+    background: radial-gradient(#ff00f0 2px, transparent 3px),
+                radial-gradient(#00f0ff 2px, transparent 3px),
+                radial-gradient(#ff0 2px, transparent 3px);
+    background-size: 100px 100px, 150px 150px, 200px 200px;
+    background-position: 0 0, 50px 50px, 100px 100px;
+    animation: moveParticles 20s linear infinite;
+}
+
+@keyframes moveParticles {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-1000px, -1000px);
+    }
+}
+
+
+/* WEATHER INFO STYLING DIV  */
+
+
+/* Body Styling */
+
+
+/* Container */
+.container-weat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Weather Card */
+.weather-card {
+    background: rgba(0, 0, 0, 0.7); /* Slight transparency */
+    padding: 30px;
+    border-radius: 20px;
+    border: 2px solid #00f0ff; /* Neon border */
+    box-shadow: 0 0 30px rgba(0, 240, 255, 0.5); /* Neon shadow */
+    width: 350px;
+    text-align: center;
+    display: none;
+}
+
+/* Weather Title */
+.weather-title {
+    font-size: 24px;
+    color: #00f0ff; /* Neon Text */
+    text-shadow: 0 0 10px #00f0ff;
+}
+
+/* Main Weather Section */
+.main-weather {
+    margin: 20px 0;
+}
+
+/* Weather Icon Placeholder */
+/* .weather-icon {
+    border: 2px dashed #00f0ff;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #00f0ff;
+    font-size: 16px;
+} */
+
+.image-placeholder {
+    color: #fff;
+}
+
+/* Temperature */
+.temperature {
+    color: #00f0ff;
+    font-size: 48px;
+    text-shadow: 0 0 10px #00f0ff;
+    margin: 10px 0;
+}
+
+/* Weather Description */
+.description {
+    color: #b0b0b0;
+    font-size: 18px;
+}
+
+/* Location */
+.location {
+    color: #7c7c7c;
+    font-size: 16px;
+}
+
+/* Additional Information */
+.additional-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Info Item */
+.info-item {
+    background: rgba(0, 0, 0, 0.6);
+    border: 2px solid #00f0ff; /* Neon border */
+    border-radius: 15px;
+    width: 45%;
+    padding: 15px 10px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 240, 255, 0.2);
+}
+
+/* Hover Effect */
+.info-item:hover {
+    border: 2px solid #00ffc4;
+    box-shadow: 0 0 20px #00ffc4; /* Brighter glow on hover */
+}
+
+/* Icon */
+.icon {
+    font-size: 24px;
+    margin-bottom: 5px;
+    color: #00f0ff;
+}
+
+/* Value */
+.value {
+    font-size: 20px;
+    color: #fff;
+    margin: 5px 0;
+}
+
+/* Label */
+.label {
+    font-size: 14px;
+    color: #aaa;
+}
+
+/* Button for Back or Additional Actions */
+.back-button {
+    background: none;
+    border: 2px solid #00f0ff;
+    color: #00f0ff;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.back-button:hover {
+    border: 2px solid #00ffc4;
+    box-shadow: 0 0 20px #00ffc4;
+}
+
+
+.weather-card i {
+    color: #00ffc4;
+    font-size: 24px;
+    float: left;
+    position: relative;
+    top: -12px;
+    cursor: pointer;
+}
+
+
+

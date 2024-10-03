@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+</head>
+<body>
+    <div class="container">
+        <!-- Animated background particles -->
+        <div class="particles"></div>
+        
+        <!-- Weather App Card -->
+        <div class="card">
+            <marquee class="neon-text" behavior="" direction="">Made By <strong>Usman Hameed</strong> </marquee>
+            <h2 class="neon-title">Weather App</h2>
+            <input type="text" placeholder="Enter City Name" class="cardInput">
+        </div>
+    
+    <!-- WEATHER INFO DIV- CONTAINER  -->
+       
+    <div class="container-weat"></div>
+        <div class="weather-card">
+            <i class="fa-solid fa-arrow-left" id="backArrow-icon"></i>
+             <marquee class="neon-text">Made By <strong>Usman Hameed</strong></marquee>             
+            <h1 class="weather-title">Weather App</h1>
+            
+            <!-- Weather Image Placeholder -->
+            <div class="main-weather">
+                <div class="image-placeholder">
+                    <img class="weather_img" src="./images/snow.png" style="height: 160px; width: 162px;">
+                </div>
+                <h2 class="temperature">25°C</h2>
+                <p class="description">Haze</p>
+                <p class="location">📍 Mumbai, IN</p>
+            </div>
+
+            <!-- Additional Information Section -->
+            <div class="additional-info">
+                <div class="info-item">
+                    <div class="icon">🌡️</div>
+                    <p class="value">25°C</p>
+                    <span class="label">Feels like</span>
+                </div>
+                <div class="info-item">
+                    <div class="icon">💧</div>
+                    <p class="value">89%</p>
+                    <span class="label">Humidity</span>
+                </div>
+            </div>
+   
+   
+        </div>
+    </div>
+    
+    
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
